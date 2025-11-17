@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生理學探索之旅 | 生理學主頁</title>
+    <style>
+        /* 基本 CSS 樣式，您可以將這部分內容移至一個獨立的 style.css 文件 */
+        body {
+            font-family: 'Arial', 'Microsoft JhengHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d99; /* 深藍色 */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00; /* 黃色 */
+        }
+
+        .hero {
+            background-color: #e0f7fa; /* 淺藍色背景 */
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid #004d99;
+        }
+
+        .hero h2 {
+            color: #004d99;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .topic-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: calc(33% - 40px); /* 三個卡片一行 */
+            min-width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
+            color: #007bff;
+            margin-top: 0;
+        }
+
+        .resources {
+            background-color: #ccf2ff;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .resources ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        .resources li {
+            background-color: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .resources li a {
+            text-decoration: none;
+            color: #004d99;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9em;
+        }
+
+        /* RWD 調整 */
+        @media (max-width: 768px) {
+            .topic-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>🧠 人體運作的奧秘：生理學世界</h1>
+            <nav>
+                <a href="#home">首頁</a>
+                <a href="#topics">主要主題</a>
+                <a href="#resources">學習資源</a>
+                <a href="#contact">聯絡我們</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>探索生命機能的科學</h2>
+            <p>生理學是研究生物體如何運作、維持生命、應對環境變化的基礎科學。從細胞分子到器官系統，解開人體複雜機制的秘密。</p>
+            <a href="#topics" style="display: inline-block; padding: 10px 20px; background-color: #ffcc00; color: #004d99; text-decoration: none; border-radius: 5px; font-weight: bold;">立即開始探索</a>
+        </div>
+    </section>
+
+    <section id="topics" class="container">
+        <h2>📚 主要生理學主題</h2>
+        <div class="topic-cards">
+            <div class="card">
+                <h3>心血管生理學</h3>
+                <p>研究心臟、血管和血液循環的機制，了解如何維持血壓和氧氣運輸。</p>
+                <a href="#">深入了解 →</a>
+            </div>
+
+            <div class="card">
+                <h3>神經生理學</h3>
+                <p>探索神經系統的運作方式，包括神經元的訊號傳導、感覺和運動控制。</p>
+                <a href="#">深入了解 →</a>
+            </div>
+
+            <div class="card">
+                <h3>呼吸生理學</h3>
+                <p>專注於肺部的氣體交換過程、呼吸的調節以及氧氣和二氧化碳的平衡。</p>
+                <a href="#">深入了解 →</a>
+            </div>
+
+            <div class="card">
+                <h3>內分泌生理學</h3>
+                <p>研究激素的產生、作用及其在調節新陳代謝、生長和繁殖中的角色。</p>
+                <a href="#">深入了解 →</a>
+            </div>
+
+            <div class="card">
+                <h3>腎臟生理學</h3>
+                <p>分析腎臟在維持體液平衡、電解質濃度和廢物排泄方面的功能。</p>
+                <a href="#">深入了解 →</a>
+            </div>
+
+            <div class="card">
+                <h3>肌肉生理學</h3>
+                <p>探討骨骼肌、平滑肌和心肌的收縮機制以及它們在運動中的作用。</p>
+                <a href="#">深入了解 →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2>🔗 特色學習資源</h2>
+            <p>提升您的生理學知識，從這裡開始！</p>
+            <ul>
+                <li><a href="#">生理學互動圖譜</a></li>
+                <li><a href="#">人體系統解剖圖庫</a></li>
+                <li><a href="#">最新生理學研究報告</a></li>
+                <li><a href="#">生理學線上測驗區</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2025 生理學探索之旅。保留所有權利。</p>
+        <p>聯絡我們：<a href="mailto:info@yourwebsite.com" style="color: #ffcc00;">info@yourwebsite.com</a></p>
+    </footer>
+
+</body>
+</html>
